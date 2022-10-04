@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Montserrat";
+    color: #202020;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #F5F5F5;
+    max-width: max-content;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+}
+.caption-small {
+    font-size: 14px;
+}
+.caption-big {
+    font-size: 25px;
+}
+.intro-nav {
+    display: flex;
+    margin: 25px 0 10px;
+    justify-content: space-between;
+}
+.nav-logo {
+    flex-grow: 0.2;
+    align-items: flex-start;
+}
+.nav-center {
+    display: flex;
+    flex-grow: 0.2;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+.nav-right {
+    display: flex;
+    flex-grow: 0.1;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+li {
+    list-style: none;
+}
+hr {
+    border: 0.5px solid #BBBBBB;
+    margin-bottom: 15px;
+}
+.spectacles-main-caption {
+    display: flex;
+}
+.spectacles-small {
+    flex-grow: 0.15;
+    margin: 15px 0 0 0;
+    width: 225px;
+}
+.spectacles-big {
+    width: 320px;
+    height: 60px;
+    text-align: justify;
+    line-height: normal;
+    margin: 15px 0 0 0;
+}
+.secondary-header {
+    font-size: 35px;
+    width: 420px;
+    font-weight: lighter;
+}
+.blocks-layout {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+}
+.img-text {
+    position: relative;
+}
+.img-text h4 {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 12px;
+}
