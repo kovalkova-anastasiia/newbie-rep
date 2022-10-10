@@ -10,7 +10,10 @@ body {
     margin-left: 25px;
     margin-right: 25px;
     background-color: #F5F5F5;
-    max-width: max-content;
+}
+.store-whole-container {
+    max-width: 1390px;
+    margin: auto;
 }
 a {
     text-decoration: none;
@@ -71,19 +74,102 @@ hr {
 .secondary-header {
     font-size: 35px;
     width: 420px;
-    font-weight: lighter;
+    font-weight: 200;
 }
 .blocks-layout {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1vw;
+    grid-template-rows: [main-row-start] 473.5px [showcase-row-start] 450px [main-row-end];
+    grid-template-columns: [main-column-start] 450px [showcase-column-start] 450px [showcase-end] 450px [main-column-end];
+    grid-gap: 20px;
+    margin-bottom: 62px;
 }
-.img-text {
+.card-woolf {
+    grid-column-start: showcase-column-start;
+    grid-row-start: showcase-row-start;
+}
+.card-colonnade {
+    grid-column-start: showcase-end;
+    grid-row-start: showcase-row-start;
+}
+.shop-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.product-card {
     position: relative;
+    width: 450px;
+    height: 450px;
 }
-.img-text h4 {
+.caption-favorite {
+    display: flex;
     position: absolute;
-    margin-top: 12px;
-    margin-left: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px;
+    width: 100%;
+}
+.caption-favorite h4 {
+    margin: 0;
+}
+.block-caption {
+    display: flex;
+}
+.block-caption a {
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+.block-caption span {
+    flex-grow: 1;
+}
+
+.primary-header {
+    font-size: 75px;
+    font-weight: 200;
+    width: 1120px;
+    margin: 20px 0 232px 0;
+}
+.tax-return-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.tax-return-caption {
+    display: flex;
+    gap: 42px;
+}
+.tax-return-caption-left {
+    white-space: nowrap;
+}
+.tax-return-caption-right {
+    width: 290px;
+}
+.store-img-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+.store-block-caption {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.store-block-caption p {
+    margin: 0;
+}
+.store-caption-right {
+    width: 310px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 342px 342px 342px 342px;
+    padding-top: 6px;
+    margin-left: -25px;
+    margin-right: -25px;
+    background-color: #E1E1E1;
+}
+.footer-container div {
+    margin-left: 25px;
+    margin-right: 25px;
 }
